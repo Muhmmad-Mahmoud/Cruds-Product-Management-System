@@ -222,3 +222,30 @@ th {
 input:focus {
   outline: solid #1f1414;
 }
+
+.foot {
+  border-top: 1px solid #2d2b2b;
+  box-shadow: 0px 4px 10px rgb(68 66 66 / 10%);
+  margin-top: 30px;
+  text-align: center;
+  background-color: transparent;
+  padding: 20px 0;
+  font-family: sans-serif;
+  font-size: 20px;
+  color: white;
+}
+.linkedin {
+  color: blue;
+  text-align: center;
+  /* width: fit-content; */
+  /* background-color: white; */
+  border-radius: 10px;
+  margin: 15px;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
