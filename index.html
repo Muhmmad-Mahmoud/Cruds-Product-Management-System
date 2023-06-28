@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUDS Operations JS | Muhammad Mahmoud </title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <div class="crud">
+    <!-- Header -->
+    <div class="head">
+      <h2 class="crud-tittle">Cruds</h2>
+      <h4 class="description">Product Management System</h4>
+    </div>
+    <!--End Header -->
+
+
+    <!-- Inputs -->
+    <div class="inputs">
+      <input id="tittle" type="text" placeholder="Enter The Tittle Of Product ">
+      <div class="calculate">
+        <input onkeyup="getTotal ()" id="price" type="number" placeholder="price">
+        <input onkeyup="getTotal ()" id="Taxes" type="number" placeholder="Taxes">
+        <input onkeyup="getTotal ()" id="Ads" type="number" placeholder="Ads">
+        <input onkeyup="getTotal ()" id="Discount" type="number" placeholder="Discount">
+        <button id="btn-total">Total: </button>
+
+      </div>
+      <input id="count" type="number" placeholder="The Count Of Products ">
+      <input id="category" type="text" placeholder="The Category Of Products ">
+
+      <button id="create">Create </button>
+
+    </div>
+    <!-- End Inputs -->
+
+
+    <!-- Outputs -->
+    <div class="ouputs">
+      <input id="search" type="text" placeholder="Search " onkeyup="searchData(this.value)">
+      <div class="search">
+        <button id="serTittle" onclick="getSearchMood(this.id)">Search By Tittle </button>
+        <button id="serCategory" onclick="getSearchMood(this.id)">Search By Category</button>
+      </div>
+
+      <div id="deleteAll">
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>tittle</th>
+            <th>price</th>
+            <th>taxes</th>
+            <th>ads</th>
+            <th>discount</th>
+            <th>Total</th>
+            <th>category</th>
+            <th>update</th>
+            <th>delete</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+
+      </table>
+    </div>
+    <!-- End Outputs -->
+
+  </div>
+
+  <!-- Js File -->
+  <script src="/main.js"></script>
+</body>
+
+</html>
